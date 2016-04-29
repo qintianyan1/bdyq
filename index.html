@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        /*background: #fff;*/
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+      <div class="head"></div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide one">
+                <div class="swiper1">
+                <div class="cloude1"></div>
+                <div class="cloude2"></div>
+                <div class="airport"></div>
+                <div class="font"></div>
+                <div class="ship"></div>
+                <div class="ship1"></div>
+                <div class="ship2"></div>
+                <div class="ship3"></div>
+                <form action="" method="post" class="myform">
+                    <input type="text" placeholder="用户名" class="user">
+                     <input type="text" placeholder="密码" class="pwd">
+                     <input type="text" placeholder="验证码" class="pwd1">
+                     <input type="submit" value="登录" class="sub">
+                </form>
+                <div class="fllow-head"><a href="#"></a></div>
+            </div>
+            </div>
+
+            <div class="swiper-slide two">
+                <div class="swiper2">
+                <div class="img-font"></div>
+                <div class="text">
+                    <h4>数据收集与处理</h4>
+                    <p>
+                        15年专业数据收集与语义分析技术积累卓越极致，不断攀登
+                    </p>
+                </div>
+                <div class="brin"></div>
+                <div class="sq1"></div>
+                <div class="sq2"></div>
+                <div class="sq3"></div>
+                <div class="sq4"></div>
+                <div class="sq5"></div>
+                <div class="fllow-two"><a href="#"></a></div>
+                </div>
+            </div>
+            <div class="swiper-slide three"></div>
+            <div class="swiper-slide four"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        direction: 'vertical',
+        slidesPerView: 1,
+        paginationClickable: true,
+        mousewheelControl: true
+    });
+    </script>
+</body>
+</html>
